@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social - TS.com</title>
+    <style>
+        
+        body {
+            font-family: Helvetica;
+            margin: 0;
+            padding: 0;
+            background-color: #454545;
+        }
+
+        header { 
+            
+            background-image: url(noticias.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(255, 255, 255);
+            padding: 1px;
+            text-align: center;
+            font-size: 60px;
+            
+        }
+            
+        nav {
+            background-color: #656565;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        div {
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            padding: 40px;
+            text-align: left;
+            color: white;
+        }
+
+        .album {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .album img {
+            width: 400px;
+            height: 200px;
+            border-radius: 2px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.461);
+
+        }
+
+        .album img:hover {
+            transform: scale(1.05);
+        }
+
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+     
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>social</h1>
+</header>
+
+<nav>
+    <a href="principal.html">inicio</a>
+    <a href="discografia.html">discografía</a>
+    <a href="mercancia.html">mercancía</a>
+    <a href="social.html">social</a>
+</nav>
+
+<div>
+    <br>
+    <h2>Mantente informado de cada easter egg</h2>
+</div>
+
+<div class="elementor-widget-wrap elementor-element-populated">
+    <!-- Widget de Instagram -->
+    <div class="elementor-element elementor-element-instagram-widget" data-id="instagram-widget" data-element_type="widget" data-widget_type="instagram.default">
+        <div class="elementor-widget-container">
+            <style>
+                .instagram-widget {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 5%;
+                }
+            </style>
+            <div class="instagram-widget" 
+                 data-href="https://www.instagram.com/taylorswift/" 
+                 data-tabs="timeline" 
+                 data-width="1000" 
+                 data-height="700">
+                <iframe 
+                    src="https://www.instagram.com/taylorswift/embed" 
+                    width="1000" 
+                    height="700" 
+                    style="border:none;overflow:hidden" 
+                    scrolling="no" 
+                    frameborder="0" 
+                    allowTransparency="true" 
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Widget de Twitter (X) -->
+    <div class="elementor-element elementor-element-twitter-widget" data-id="twitter-widget" data-element_type="widget" data-widget_type="twitter.default">
+        <div class="elementor-widget-container">
+            <style>
+                .twitter-widget {
+                    max-width: 100%;
+                    height: auto;
+                    border: none;
+                    align-items: center;
+                    padding-left: 5%;
+                }
+            </style>
+            <a class="twitter-timeline" href="https://twitter.com/taylorswift13?ref_src=twsrc%5Etfw" data-width="1000" data-height="700">Tweets by taylorswift13</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer>
+    &copy; TS.com
+</footer>
+
+</body>
+
+</html>

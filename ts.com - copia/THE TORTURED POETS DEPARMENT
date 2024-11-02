@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum 1 - Artista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .platform-links a {
+            display: block;
+            margin: 10px 0;
+            font-size: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .platform-links a:hover {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Álbum 1</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="discografia.html">Discografía</a>
+    <a href="musica.html">Música</a>
+    <a href="videos.html">Videos</a>
+    <a href="mercancia.html">Mercancía</a>
+</nav>
+
+<section>
+    <h2>Escucha en plataformas</h2>
+    <div class="platform-links">
+        <a href="https://www.spotify.com" target="_blank">Spotify</a>
+        <a href="https://www.apple.com/apple-music/" target="_blank">Apple Music</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        <a href="https://www.deezer.com" target="_blank">Deezer</a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 Sitio Oficial del Artista
+</footer>
+
+</body>
+</html>

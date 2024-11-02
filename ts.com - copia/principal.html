@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TS.com</title>
+    
+    
+    <style>
+     
+     body {
+            font-family: Helvetica;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header { 
+            
+            background-color: #0c0c0c;
+            background-image: ;
+            color: white;
+            text-align: left;
+            position: relative;
+            font-size: 60px;
+        }
+            
+        nav {
+            background-color: #656565;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-image: url(principal.jpg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(255, 255, 255);
+            padding: 1px;
+            text-align: center;
+            font-size: 60px;
+        }
+
+        .album {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .album img {
+            width: 200px;
+            height: 200px;
+            border-radius: 2px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.461);
+
+        }
+
+        .album img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        div {
+
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        #descripcion {
+
+            text-align: justify;
+            padding-left: 5%;
+            padding-right: 5%;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <h1>TS.com</h1>
+    
+
+</section>
+
+
+<nav>
+    
+    <a href="principal.html">inicio</a>
+    <a href="discografia.html">discografía</a>
+    <a href="videos.html">videos</a>
+    <a href="mercancia.html">mercancía</a>
+    <a href="noticias.html">noticias</a>
+
+</nav>
+
+<div>
+    <h1>¿Quien es Taylor Swift?</h1>
+    <p id="descripcion">Taylor Swift es una cantautora, productora y actriz estadounidense nacida el 13 de diciembre de 1989 en Reading, 
+        Pennsylvania. Conocida por su habilidad para escribir canciones autobiográficas, Swift ha abarcado una amplia variedad de géneros musicales, 
+        comenzando con el country y expandiéndose hacia el pop, rock y el folk.
+
+        <br>
+        <br>
+        <strong>carrera musical</strong>
+        <br>
+        Swift debutó en 2006 con su álbum homónimo Taylor Swift, el cual la catapultó al éxito en la música country. Su segundo álbum, Fearless (2008), 
+        fue un fenómeno internacional y ganó el Grammy a Álbum del Año, consolidando su estatus en la industria musical. 
+        A lo largo de los años, ha lanzado múltiples álbumes, entre los que destacan Speak Now (2010), Red (2012), 1989 (2014), Reputation (2017), 
+        Lover (2019), Folklore (2020) y Evermore (2020).
+        <br>
+        <br>
+        <strong>temáticas</strong>
+        <br>
+        Swift ha sido elogiada por su narrativa lírica y su habilidad para captar emociones universales como el amor, 
+        la pérdida y el crecimiento personal. Sus letras a menudo son introspectivas y exploran temas de relaciones personales, 
+        el desamor y la superación.
+        <br>
+        <br>
+        <strong>generos musicales</strong>
+        <br>
+        En 2014, Swift hizo una notable transición del country al pop con su álbum 1989, que incluyó éxitos como "Shake It Off" y "Blank Space". 
+        Posteriormente, con los lanzamientos de Folklore y Evermore, exploró un sonido más acústico e indie folk, ampliando aún 
+        más su versatilidad como artista.
+        <br>
+        <br>
+        <strong>impacto cultural</strong>
+        <br>
+        Además de su música, Swift es una figura influyente en la cultura pop y ha utilizado su 
+        plataforma para abogar por derechos de artistas, mujeres y la comunidad LGBTQ+. También ha 
+        estado envuelta en la controversia sobre la propiedad de su catálogo musical, lo que la llevó 
+        a regrabar algunos de sus álbumes.
+        <br>
+        <br>
+        <strong>premios</strong>
+        <br>
+        Swift ha ganado numerosos premios, incluyendo varios Grammy, American Music Awards y Billboard Music Awards. 
+        Ha sido reconocida como una de las artistas más influyentes de su generación y sigue siendo una figura clave 
+        en la industria musical global.
+        <br>
+        <br>
+        A lo largo de su carrera, Swift ha demostrado una habilidad única para evolucionar artísticamente mientras 
+        mantiene una base de seguidores fiel.</p>
+</div>
+
+
+<div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="T1.jpg" alt="Imagen 2">
+            <img src="T2.jpg" alt="Imagen 3">
+            <img src="T3.jpg" alt="Imagen 1">
+            <img src="T4.jpg" alt="Imagen 2">
+            <img src="T5.jpg" alt="Imagen 3">
+            <img src="T6.jpg" alt="Imagen 1">
+            <img src="T7.jpg" alt="Imagen 3">
+        </div>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide img');
+    
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 3000); // Cambia la imagen cada 3 segundos
+        }
+    
+        showSlides();
+    </script>
+    
+    <style>
+        .carousel-container {
+            max-width: 100%;
+            position: relative;
+            margin: 80px auto;
+            text-align: center;
+            height: 600;
+        }
+    
+        .carousel-slide img {
+            width: 50%;
+            height: auto;
+            display: none;
+            margin: 0 auto;
+            border-radius: 3px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    
+        .carousel-slide img:first-child {
+            display: block; /* Mostrar la primera imagen al cargar la página */
+        }
+    </style>
+    
+</div>
+
+<footer>
+    &copy; TS.com
+</footer>
+
+</body>
+</html>
